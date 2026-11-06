@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* การไล่ระดับสีจากสีพื้นหลัง 1 ไปยังสีพื้นหลัง 2 */
+    background: linear-gradient(to right, hsl(0, 100%, 70%), hsl(240, 100%, 70%));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* สีกล่องโปร่งแสงตามค่า HSLA ที่กำหนด */
+.box {
+    background-color: hsla(0, 50%, 100%, 0.5);
+    padding: 30px;
+    max-width: 500px;
+    border-radius: 4px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #000;
+}
+
+.box p {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #111;
+}
